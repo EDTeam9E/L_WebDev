@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subscribe</title>
+
+    <style>
+        .form{
+            padding: 10px;
+            color: goldenrod;
+            border: black 2px solid;
+            font-weight: 300;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        #subscribe{
+            background-color: burlywood;
+            font-size:25px;
+            padding: 30px;;
+            font-weight:600;
+            width:fit-content ;
+            margin-right: auto;
+            margin-left: auto;
+            
+        }
+        #head-banner{
+            background-color: burlywood;
+            font-size: x-large;
+            text-align:center;
+            width: 531px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .label{
+            margin: 0;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        
+        }
+        .input-item{
+            width: 100%;
+            height: 30px;
+
+        }
+    </style>    
+</head>
+<body>
+    <header>
+        <nav>
+            <div style="text-align: right; padding-top: 4px ;">
+                <b>
+                <span class="form"><a href="index.html">Home</a></span>
+                <span class="form"><a href="about_us.html">About Us</a></span>
+                <span class="form">Login</span>
+                </b>
+        </nav>
+    <main>
+        <section>
+            <header>
+                <h1 style="background-color:lightseagreen; text-align: center;font-size:40px;font-family: cursive;">Greetings!</h1>
+                <h2 id="head-banner">SUBSCRIPTION FORM</h2>
+            </header>
+            <form id="subscribe" method="post">
+                <div>
+                    <p class="label">First Name </p>
+                    <input class="input-item" type="text" name="FName" autofocus required>
+                </div>
+                <div>
+                    <p class="label">last Name</p> 
+                    <input class="input-item" type="text" name="LName">
+                </div>
+                <div>
+                    <p class="label">Date Of Birth</p>
+                    <input class="input-item" type="date" name="DOB" max="2004-01-01" required>
+                </div>
+                    <p class="label">Gender:</p>
+                    <input  type="radio" value="Female" name="Female">Female</input>
+                    <input  type="radio" value="Male" name="Male">Male</input>
+                    <input  type="radio" value="Other" name="Other">Other</input>
+                    <input  type="radio" value="Decline To State" name="DeclineToState" checked>Decline To State</input>
+                </div>
+                <div>
+                    <p class="label">Email ID</p>
+                    <input class="input-item" type="email" name="Email" required> 
+                </div>
+                <div>
+                    <p class="label">UserName</p>
+                    <input class="input-item" type="text" name="username" required>
+                </div>
+                <div>
+                    <p class="label">Create Password </p>
+                    <input class="input-item" type="password" name="password" minlength="6" required>
+                </div>
+                <div>
+                    <p class="label">Confirm Password </p>
+                    <input class="input-item" type="password" name="confirmPass" minlength="6" required>
+                </div>
+                <div>
+                    <p class="label">Upload profile-picture</p>
+                    <input class="input-item" type="file" name="profile-picture">
+                </div>
+                <div>
+                    <p class="label"> How You Heard About Us </p>
+                    <select class="input-item" name="source">
+                            <option value="Word-Of-Mouth">Word Of mouth</option>
+                            <option value="SM">Social Media</option>
+                            <option value="Online-adv">Online advertisement</option>
+                            <option value="Search">Web Search</option>
+                            <option value="KnowAll">I know Everyone</option>
+                            <option value="Others">Others (please specify)</option>
+                    </select><br>
+                    <!--
+                        #helps to suggest with input in dropdown 
+
+                    <input list="source" class="input-item" name="source">
+                        <datalist id="source">
+                            <option value="Word-Of-Mouth">Word Of mouth</option>
+                            <option value="SM">Social Media</option>
+                            <option value="Online-adv">Online advertisement</option>
+                            <option value="Search">Web Search</option>
+                            <option value="KnowAll">I know Everyone</option>
+                            <option value="Others">Others (please specify)</option>
+                        </datalist>
+                    </input><br>
+                    -->
+                    <textarea class="input-item" name="OtherSources" rows="1" style="width:465px;"></textarea>
+                </div><br>
+                <div>
+                    <input type="checkbox">I agree to the Terms and Conditions</input>
+                </div><br>
+                <div> 
+                    <input class="input-item" type="submit" name="Subscribe" value="Subscribe">
+                    <input class="input-item" type="reset" name="reset" value="Reset">
+                </div>
+
+            
+            </form>
+        </section>
+    </main>
+</body>
+</html>

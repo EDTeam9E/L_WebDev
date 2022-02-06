@@ -1,0 +1,52 @@
+.form {
+  padding: 10px;
+  color: goldenrod;
+  border: black 2px solid;
+  font-weight: 300;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.image {
+  width: 200px;
+  border: black 2px solid;
+}
+.desc {
+  font-size: 25px;
+  line-height: 30px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: oblique;
+}
+.newshead {
+  font-size: 30px;
+  padding: 5px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.pos {
+  color: green;
+}
+.neg {
+  color: red;
+}
+table {
+  width: 800px;
+  margin-top: 5px;
+  /* margin-left: auto;
+    margin-right: auto; */
+}
+table,
+td {
+  font-size: larger;
+  font-weight: bold;
+  border: 3px solid black;
+  border-collapse: collapse;
+  text-align: justify;
+}
+td {
+  padding: 5px;
+}
+th {
+  font-size: x-large;
+  text-align: center;
+}
